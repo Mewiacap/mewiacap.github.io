@@ -218,8 +218,10 @@ header {
 }
 
 .endBlock {
-	height: 600px;
-	background: #222;
+	height: 500px;
+	/*background: #222;*/
+	background: url("image/footer.jpg") no-repeat top center / cover fixed;
+	/*background: url("image/footer2.png") no-repeat top center / cover fixed;*/
 }
 
 footer {
