@@ -73,7 +73,7 @@
 body {
 	padding: 0;
 	margin: 0 auto;
-	background: #111;
+	background: #171717;
 }
 
 a {
@@ -88,6 +88,7 @@ header {
 	text-align: center;
 	position: fixed;
 	top: 0;
+	z-index: 10;
 
 	/*height: 80px;*/
 	/*background: linear-gradient(rgba(17, 17, 17, 80%), rgba(17, 17, 17, 30%));*/
@@ -168,12 +169,13 @@ header {
 	margin: 0 60px;
 	height: 340px;
 	width: 100%;
+	align-items: center;
 }
 
 .infoBlock_preview {
 	min-width: 600px;
 	height: 340px;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 .infoBlock_rightContainer {
@@ -196,25 +198,71 @@ header {
 	font-weight: 300;
 }
 
+.infoBlock_header p {
+	color: #FFD500;
+}
+
 .infoBlock_line {
 	margin-top: 20px;
 	width: 80px;
 	height: 1px;
-	background: #fff;
+	background: #FFD500;
 }
 
 .infoBlock_lineRight {
 	margin: 20px 0 0 auto;
 	width: 80px;
 	height: 1px;
-	background: #fff;
+	background: #FFD500;
 }
 
 .infoBlock_description {
 	margin-top: 20px;
-	font-family: 'Montserrat';
+	font-family: 'Circe';
 	font-size: 16px;
 	font-weight: 300;
+}
+
+.infoBlock_description p {
+	text-indent: 40px;
+	color: #ccc;
+}
+
+.infoBlock_description span {
+	font-weight: 500;
+	/*color: #FFD500;*/
+}
+
+.infoBlock_description a {
+	font-weight: 500;
+	transition: ease 0.5s;
+	/*color: #FFD500;*/
+}
+
+.infoBlock_description a:hover {
+	color: #FFD500;
+	font-weight: 500;
+}
+
+.galleryBlock {
+	height: 600px;
+	widows: 100%;
+}
+
+.galleryRow {
+	display: flex;
+	height: 300px;
+}
+
+.galleryCell {
+	height: 300px;
+	width: 100%;
+	filter: brightness(75%);
+	transition: ease 0.5s;
+}
+
+.galleryCell:hover {
+	filter: brightness(100%);
 }
 
 .endBlock {
@@ -231,7 +279,7 @@ footer {
 	align-items: center;
 }
 
-span {
+footer span {
 	width: 30%;
 	font-family: 'Montserrat';
 	font-size: 14px;
