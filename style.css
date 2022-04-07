@@ -166,9 +166,9 @@ header {
 
 .infoBlock_content {
 	display: flex;
-	margin: 0 60px;
+	margin: 0 auto;
 	height: 340px;
-	width: 100%;
+	max-width: 1400px;
 	align-items: center;
 }
 
@@ -314,4 +314,12 @@ footer span {
 
 .thanks {
 	text-align: right;
+}
+
+
+
+@media (max-width: 1500px) {
+	.infoBlock_content {
+		margin: 0 60px;
+	}
 }
