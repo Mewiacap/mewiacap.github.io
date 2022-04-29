@@ -187,6 +187,7 @@ header {
 	min-width: 600px;
 	height: 340px;
 	border-radius: 5px;
+	display: flex;
 }
 
 .infoBlock_rightContainer {
