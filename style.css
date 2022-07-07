@@ -306,7 +306,7 @@ footer span {
 	text-align: center;
 }
 
-.socials picture {
+.socialIcon {
 	max-width: 24px;
 	height: 24px;
 	display: inline-block;
@@ -317,7 +317,11 @@ footer span {
 	text-align: right;
 }
 
+.map {
+	margin-left: 50px;
+}
 
+/*-------*/
 
 @media (max-width: 1500px) {
 	.infoBlock_content {
