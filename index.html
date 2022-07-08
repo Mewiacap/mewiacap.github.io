@@ -2,33 +2,65 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1920px, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>mewiacap</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
 </head>
 <body>
 	<header>
-		<div class="navList">
-			<a href="index.html" class="activeLink">Главная</a>
-			<a href="soon.html">Игровая индустрия</a>
-			<a href="soon.html">Gold Inc.</a>
-		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="activeLink">Главная</a></li>
+				<li><a href="soon.html">Игровая индустрия</a></li>
+				<li><a href="soon.html">Gold Inc.</a></li>
+			</ul>
+		</nav>
 		<div class="centerSide">
 			<a href="index.html" class="centerSide_name">БЕРЁЗКИН АНТОН</a>
 		</div>
-		<div class="navList">
-			<a href="soon.html">Прошлое</a>
-			<a href="soon.html">Будущее</a>
-			<a href="soon.html">Обо мне</a>
-		</div>
+		<nav>
+			<ul>
+				<li><a href="soon.html">Прошлое</a></li>
+				<li><a href="soon.html">Будущее</a></li>
+				<li><a href="soon.html">Обо мне</a></li>
+			</ul>
+		</nav>
+		<a href="" id="menu" class="burgerMenu">&#9776;</a>
+		<nav class="burgerNav" id="myBurgerNav">
+			<ul>
+				<li><a href="index.html" class="activeLink">Главная</a></li>
+				<li><a href="soon.html">Игровая индустрия</a></li>
+				<li><a href="soon.html">Gold Inc.</a></li>
+				<li><a href="soon.html">Прошлое</a></li>
+				<li><a href="soon.html">Будущее</a></li>
+				<li><a href="soon.html">Обо мне</a></li>
+			</ul>
+		</nav>
+		<!-- <div class="headerContainer">
+			<div class="navList">
+				<a href="index.html" class="activeLink">Главная</a>
+				<a href="soon.html">Игровая индустрия</a>
+				<a href="soon.html">Gold Inc.</a>
+			</div>
+			<div class="centerSide">
+				<a href="index.html" class="centerSide_name">БЕРЁЗКИН АНТОН</a>
+			</div>
+			<div class="navList">
+				<a href="soon.html">Прошлое</a>
+				<a href="soon.html">Будущее</a>
+				<a href="soon.html">Обо мне</a>
+			</div>
+		</div> -->
 	</header>
 	<div class="photoBlock"></div>
 	<!-- <div class="shadowBlock"></div> -->
 	<div class="spacingBlock"></div>
 	<div class="infoBlock">
 		<div class="infoBlock_content">
-			<a href="soon.html">
-				<div class="infoBlock_preview" style="background: url('image/6.jpg') no-repeat center center / cover;"></div>
+			<a href="soon.html" class="infoBlock_previewHref">
+				<div class="infoBlock_preview" style="background: url('image/6.jpg') no-repeat center center / contain;"></div>
 			</a>
 			<div class="infoBlock_rightContainer">
 				<div class="infoBlock_header"><p>Обо мне</p></div>
@@ -53,8 +85,8 @@
 					<p><a href="soon.html">Читать далее...</a></p>
 				</div>
 			</div>
-			<a href="soon.html">
-				<div class="infoBlock_preview" style="background: url('image/12.png') no-repeat center center / cover;"></div>
+			<a href="soon.html" class="infoBlock_previewHref">
+				<div class="infoBlock_preview" style="background: url('image/12.png') no-repeat center center / contain;"></div>
 			</a>
 		</div>
 	</div>
@@ -72,8 +104,8 @@
 	</div>
 	<div class="infoBlock">
 		<div class="infoBlock_content">
-			<a href="https://play.google.com/store/apps/details?id=com.mewiacapsoftware.goldinc&hl=en_GB&gl=US">
-				<div class="infoBlock_preview" style="background: url('image/GoldInc_Cover.png') no-repeat center center / cover;"></div>
+			<a href="https://play.google.com/store/apps/details?id=com.mewiacapsoftware.goldinc&hl=en_GB&gl=US" class="infoBlock_previewHref">
+				<div class="infoBlock_preview" style="background: url('image/GoldInc_Cover.png') no-repeat center center / contain;"></div>
 			</a>
 			<div class="infoBlock_rightContainer">
 				<div class="infoBlock_header"><p>Gold Inc.</p></div>
@@ -87,34 +119,36 @@
 		</div>
 	</div>
 	<div class="spacingBlock"></div>
-	<div class="spacingBlock"></div>
+	<!-- <div class="spacingBlock"></div> -->
 	<div class="endBlock"></div>
 	<footer>
-		<span class="gmail">mewiacap@gmail.com</span>
-		<div class="socials">
-			<a href="https://vk.com/mewiacap/">
-				<picture class="socialIcon">
-					<source type="image/svg+xml" srcset="image/icons/vk.svg">
-					<img src="image/icons/vk.svg" alt="ВКонтакте">
-				</picture>
-			</a>
-			<a href="https://www.instagram.com/mewiacap/">
-				<picture class="socialIcon">
-					<source type="image/svg+xml" srcset="image/icons/instagram.svg">
-					<img src="image/icons/instagram.svg" alt="Instagram">
-				</picture>
-			</a>
-			<a href="https://github.com/mewiacap/">
-				<img src="image/icons/github.png" alt="Github" class="socialIcon">
-			</a>
-			<a href="https://play.google.com/store/apps/dev?id=6685741744734311673">
-				<picture class="socialIcon">
-					<source type="image/svg+xml" srcset="image/icons/googlePlay.svg">
-					<img src="image/icons/googlePlay.svg" alt="Google Play">
-				</picture>
-			</a>
-		</div>
-		<span class="thanks">Спасибо за внимание!</span>
+			<span class="gmail">mewiacap@gmail.com</span>
+			<div class="socials">
+				<a href="https://vk.com/mewiacap/">
+					<picture class="socialIcon">
+						<source type="image/svg+xml" srcset="image/icons/vk.svg">
+						<img src="image/icons/vk.svg" alt="ВКонтакте">
+					</picture>
+				</a>
+				<a href="https://www.instagram.com/mewiacap/">
+					<picture class="socialIcon">
+						<source type="image/svg+xml" srcset="image/icons/instagram.svg">
+						<img src="image/icons/instagram.svg" alt="Instagram">
+					</picture>
+				</a>
+				<a href="https://github.com/mewiacap/">
+					<img src="image/icons/github.png" alt="Github" class="socialIcon">
+				</a>
+				<a href="https://play.google.com/store/apps/dev?id=6685741744734311673">
+					<picture class="socialIcon">
+						<source type="image/svg+xml" srcset="image/icons/googlePlay.svg">
+						<img src="image/icons/googlePlay.svg" alt="Google Play">
+					</picture>
+				</a>
+			</div>
+			<span class="thanks">Спасибо за внимание!</span>
 	</footer>
+
+	<script src="./js/script.js"></script>
 </body>
 </html>
