@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 720px) {
 	.infoBlock_content {
-		padding: 0 20px;
+		padding: 80px 20px;
 	}
 
 	.infoBlock_previewHref, .infoBlock_preview {
